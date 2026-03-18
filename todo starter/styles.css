@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #000430;
+  --secondaryBackground: #171c48;
+  --text: #fff;
+  --purple: #828dff;
+  --teal: #24feee;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: white;
+}
+
+.todo-app {
+  width: 500px;
+  height: 500px;
+  max-height: 500px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border: 2px var(--purple) solid;
+  border-radius: 20px;
+}
+
+.full-progress {
+  width: 300px;
+  height: 8px;
+  background-color: var(--secondaryBackground);
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.progress {
+  width: 50%;
+  height: 100%;
+  background-color: var(--teal);
+  border-radius: 20px;
+}
+
+.progress-bar .right {
+  width: 100px;
+  height: 100px;
+  background-color: var(--purple);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar .right p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.input-section {
+  margin: 50px 0 20px;
+  width: 100%;
+}
+
+.input-section form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-input {
+  width: 85%;
+  height: 50px;
+  padding: 20px;
+  background-color: var(--secondaryBackground);
+  border: 2px solid var(--purple);
+  border-radius: 15px;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+.add-button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--purple); 
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.add-button i {
+  color: white;
+}
+
+.tasks-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.task {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  background-color: var(--secondaryBackground);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task .left,
+.task .right {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.task .left input {
+  width: 20px;
+  height: 20px;
+}
+
+.task .right button {
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.task .right button img {
+  width: 100%;
+}
+
+
